@@ -24,8 +24,11 @@ int stringLenght(char st[])
 
 int main()
 {
-    char * name = "Alice";
-    int ans = stringLenght(name);
+    char string[20];
+    printf("Enter a string:\n");
+    scanf("%s", string);
+
+    int ans = stringLenght(string);
     printf("String lenght: %d", ans);
     return 0;
 }

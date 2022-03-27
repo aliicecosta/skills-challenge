@@ -18,12 +18,11 @@ char * reverseString(char s[])
 
 int main()
 {
-    char s[] = "abcd";
+    char string[20];
+    printf("Enter a string:\n");
+    scanf("%s", string);
 
-    printf("Inputs:\n");
-    printf("s = %s\n", s);
-
-    char * ans = reverseString(s);
+    char * ans = reverseString(string);
 
     printf("Output: %s", ans);
     free(ans);
